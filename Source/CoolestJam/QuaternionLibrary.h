@@ -30,5 +30,10 @@ class COOLESTJAM_API UQuaternionLibrary : public UBlueprintFunctionLibrary
 		static FQuat MultiplyQuaternions(FQuat quat1, FQuat quat2);
 	UFUNCTION(BlueprintPure, Category = "Quaternion")
 		static FQuat InverseQuaternion(FQuat quat);
-	
+	UFUNCTION(BlueprintPure, Category = "Quaternion")
+		static FVector GetQuaternionUpVector(FQuat quat);
+	UFUNCTION(BlueprintPure, Category = "Quaternion")
+		static FVector GetQuaternionForwardVector(FQuat quat);
+	UFUNCTION(BlueprintPure, Category = "Quaternion")
+		static FVector GetQuaternionRightVector(FQuat quat);
 };

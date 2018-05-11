@@ -42,5 +42,19 @@ FQuat UQuaternionLibrary::InverseQuaternion(FQuat quat)
 	return quat.Inverse();
 }
 
+FVector UQuaternionLibrary::GetQuaternionUpVector(FQuat quat)
+{
+	return quat.GetUpVector();
+}
+
+FVector UQuaternionLibrary::GetQuaternionForwardVector(FQuat quat)
+{
+	return quat.GetForwardVector();
+}
+
+FVector UQuaternionLibrary::GetQuaternionRightVector(FQuat quat)
+{
+	return quat.GetRightVector();
+}
 
 
