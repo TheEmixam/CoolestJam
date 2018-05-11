@@ -28,5 +28,7 @@ class COOLESTJAM_API UQuaternionLibrary : public UBlueprintFunctionLibrary
 		static FQuat AddQuaternions(FQuat quat1, FQuat quat2);
 	UFUNCTION(BlueprintPure, Category = "Quaternion")
 		static FQuat MultiplyQuaternions(FQuat quat1, FQuat quat2);
+	UFUNCTION(BlueprintPure, Category = "Quaternion")
+		static FQuat InverseQuaternion(FQuat quat);
 	
 };

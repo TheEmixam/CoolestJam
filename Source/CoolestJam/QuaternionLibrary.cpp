@@ -37,4 +37,10 @@ FQuat UQuaternionLibrary::MultiplyQuaternions(FQuat quat1, FQuat quat2)
 	return quat1 * quat2;
 }
 
+FQuat UQuaternionLibrary::InverseQuaternion(FQuat quat)
+{
+	return quat.Inverse();
+}
+
+
 
